@@ -1,77 +1,40 @@
-var formattedRole = HTMLheaderRole.replace("%data%", role);
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-var skills = ["awesomeness", "programming", "teaching", "CSS"];
-//$("#main").append(skills.length);
+//End of Lesson 1 in Javascript Basics
 var bio = {
-	"name" : "Renee Judd",
+	"name" : "Renée Judd",
 	"role" : "Instructional Designer",
 	 "contacts" : {
 	 	"mobile": "773.354.4167",
 	 	"email" : "rjudd@nl.edu",
 	 	"github" : "srjudd",
-	 	"twitter" : "@srjudd",
-	 	"location" : "Chicago",
-	 },
+	 	"twitter" : "@rjudd1",
+	 	"github" : "srjudd",
+	 	"location" : "Chicago"
+	 	},
 	 	 "welcomeMessage" : "Welcome to my world!",
-	 	 "skills" : ["awesomeness", "honesty", "training", "instructional design"],
-	 	  "bioPic" : "images/srjedge250.fw.png",	
-};
-var name = bio.name;
-var formattedName = HTMLheaderName.replace("%data%", name);
-var role = bio.role;
-var formattedRole = HTMLheaderRole.replace("%data%", role);
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
+	 	 "skills" : ["Instructional Design", "LMS Administration", "Faculty Development", "Web Design"],
+	 	  "bioPic" : "images/srjedge250.fw.png"
+}
 
 
-var mobile = bio.contacts.mobile;
-var formattedMobile = HTMLmobile.replace("%data%", mobile);
-$("#topContacts").append(formattedMobile);
-
-var email = bio.contacts.email;
-var formattedEmail = HTMLemail.replace("%data%", email);
-$("#topContacts").append(formattedEmail);
-
-var github = bio.contacts.github;
-var formattedGithub = HTMLgithub.replace("%data%", github);
-$("#topContacts").append(formattedGithub);
-
-var twitter = bio.contacts.twitter;
-var formattedTwitter = HTMLtwitter.replace("%data%", twitter);
-$("#topContacts").append(formattedTwitter);
-
-var _location = bio.contacts.location;
-var formattedLocation = HTMLlocation.replace("%data%", _location);
-$("#topContacts").append(formattedLocation);
-
-var bioPic = bio.bioPic;
-var formattedBioPic = HTMLbioPic.replace("%data%", bioPic);
-$("#header").append(formattedBioPic);
-
-var welcomeMessage = bio.welcomeMessage;
-var formattedWelcomeMessage = HTMLWelcomeMsg.replace("%data%", welcomeMessage);
-$("#header").append(formattedWelcomeMessage);
-
-var skills = bio.skills;
-var formattedSkills = HTMLskills.replace("%data%", skills);
-$("#header").append(HTMLskillsStart);
-$("#skills").append(formattedSkills);
-
-var work = {};
-work.position = "Instructional Designer";
-work.employer = "National Louis University";
-work.dates = "2 years";
-work.city = "Chicago";
-
-//var education = {};
-//education["name"] = "University of Chicago";
-//education["years"] = "too many";
-//education["city"] = "Chicago";
-
-
-//$("#main").append(work["position"], work["employer"], work["dates"], work["city"]);
-//$("#main").append(education.name); */
+var work = {
+	"jobs" : [
+			{
+				"employer" : "National Louis University",
+				"title": "Instructional Designer",
+				"location" : "Chicago, Illinois, USA",
+				"dates" : "July 2012 - Present",
+				"description" :"D2L administration, online course development, and training and support of university faculty"			
+			},
+			
+			{
+				"employer" : "National Louis University",
+				"title": "Assistant Professor",
+				"location" : "Chicago, Illinois, USA",
+				"dates" : "September 2000 - July 2012",
+				"description" : "Tenured faculty. Taught and designed face-to-face, online, and blended online science courses, including labs; as technology coordinator for the College of Arts and Sciences, mentored faculty in the use of instructional technology and in online course design and served as a liaison between the College and OIT."
+			}
+		]
+	}
 
 var education = {
 	"schools" : [
@@ -95,14 +58,42 @@ var education = {
 			"city": "Online",
 			"degree": "Certificate (19 CEU)",
 			"major": "Distance Education Certificate Program",
-			"onlineCourses": [
-				"0101 Learning at a Distance",
-				"0102 Distance Education Technology",
-				"0103C Instructional Systems Design",
-				"0201R e-Learner Support Services",
-				"0365B Virtual Environments"
-				]
+			"graduation" : 2013
 		}
-	]
+		],
 
-}
+	"onlineCourses": [
+		{
+			"title": "Astrobiology and the Search for Extraterrestrial Life",
+			"school": "Coursera",
+			"dates": 2013,	
+			"url": "https://www.coursera.org/course/astrobio"
+		},
+		{
+			"title": "Intro to HTML and CSS",
+			"school": "Udacity",
+			"dates": 2014,
+			"url": "https://www.udacity.com/course/ud304"
+		},
+		{
+			"title:": "Web Accessibility MOOC for Online Educators",
+			"school": "WAMOE/BrightStart",
+			"dates": 2014,
+			"url": "https://opencourses.desire2learn.com/d2l/home/7195"
+		}
+		]
+	}
+
+	var projects = {
+		"projects" : [
+		{
+		"title": "Panopto",
+		"dates": "2014",
+		"description": "Designed just-in-time training for faculty use of Panopto in the context of D2L 10.3.",
+		"images": [
+			"../images/panopto.f2.png",
+			"../images/panoptocap.png"
+			]
+		}
+		]
+	}
